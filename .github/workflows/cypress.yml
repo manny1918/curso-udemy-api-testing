@@ -18,3 +18,9 @@ jobs:
         with:
           name: cypress-reports
           path: cypress/reports
+
+      - name: Upload Cypress HTML Report
+        uses: actions/upload-artifact@v3
+        with:
+          name: cypress-reports
+          path: cypress/reports
